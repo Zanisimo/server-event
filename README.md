@@ -9,7 +9,7 @@ Usage:
 ## How to Install
 
 ```bash
-npm install socket.io
+npm install server-event
 ```
 
 ## Server:
