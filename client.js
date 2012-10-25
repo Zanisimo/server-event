@@ -8,6 +8,11 @@ function ServerSentEvent(path) {
 }
 
 ServerSentEvent.prototype.on = function (name, callback) {
+	if (typeof name === 'callback') {
+		callback = name;
+		name     = 'message';
+	}
+
 	var callbackWrapper = function(e) {
 		callback(e.data, e);
 	};
@@ -29,6 +34,11 @@ ServerSentEvent.prototype.on = function (name, callback) {
 ServerSentEvent.prototype.once = function (name, callback) {
 	var self = this;
 
+	if (typeof name === 'callback') {
+		callback = name;
+		name     = 'message';
+	}
+
 	var callbackWrapper = function(e) {
 		callback(e.data, e);
 		self.removeListener(name, callbackWrapper);
@@ -38,6 +48,11 @@ ServerSentEvent.prototype.once = function (name, callback) {
 };
 
 ServerSentEvent.prototype.removeListener = function (name, callback) {
+	if (typeof name === 'callback') {
+		callback = name;
+		name     = 'message';
+	}
+
 	var pos,
 		events = this.events[name];
 
