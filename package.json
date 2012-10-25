@@ -1,0 +1,27 @@
+{
+	"name": "server-event",
+	"version": "1.0.1",
+	"description": "Library to use server sent events easy in node and on the client side. Can be used as express middleware",
+	"main": "index.js",
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Zanisimo/server-event.git"
+	},
+	"keywords": [
+		"sse",
+		"middleware",
+		"eventsource",
+		"event",
+		"source",
+		"server",
+		"sent",
+		"events"
+	],
+	"author": "Žanis Jegermanis",
+	"license": "BSD",
+	"engines": {
+		"node": ">=0.6.0 <=0.10.0"
+	},
+	"devDependencies": {}
+}
