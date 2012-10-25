@@ -49,7 +49,8 @@ app.get('/events', function (req, res) {
 <script type="text/javascript">
 	// in this example sse.js will be fetched from server
 	// you can also copy client.js file and serve it from different place
-	var sse = new ServerSentEvent('events');
+
+	var sse = new ServerSentEvent('events'); // events is the path used in the server side (can also pass in with backslash: /events)
 
 	sse.on('test', function (data) {
 		console.log('test', data);
