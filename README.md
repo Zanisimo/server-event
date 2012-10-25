@@ -73,6 +73,9 @@ Will remove event listener by name. You need to provide the same function witch 
 	
 Removes all event listeners by name. If name is not provided will remove all event listeners that were set.
 
+##
+In next update will add support for older browsers and IE
+
 ## Tests
 Will be coming soon
 
