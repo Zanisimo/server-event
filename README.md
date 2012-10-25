@@ -6,6 +6,12 @@ Library to use Server Sent Events easy in node and on the client side with Event
 Usage:
 ========
 
+## How to Install
+
+```bash
+npm install socket.io
+```
+
 ## Server:
 	
 As express middleware:
