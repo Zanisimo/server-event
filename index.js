@@ -1,7 +1,7 @@
 var fs = require('fs');
 
 function prepareRequest(req, res) {
-	req.socket.setTimeout(Infinity);
+	req.socket.setTimeout(0);
 
 	res.statusCode = 200;
 	res.setHeader('Content-Type', 'text/event-stream');
